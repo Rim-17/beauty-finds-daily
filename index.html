@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty Finds Daily</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8fb;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d14d72;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d14d72;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #fce8ef;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #b93660;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d14d72;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #b93660;
+        }
+
+        /* CATEGORIES */
+        .categories {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .category {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .category h3 {
+            color: #b93660;
+            margin-bottom: 10px;
+        }
+
+        /* FEATURED PRODUCTS */
+        .products {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-image {
+            height: 180px;
+            background: #fce8ef;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            color: #b93660;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .shop-button {
+            display: inline-block;
+            background: #d14d72;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .shop-button:hover {
+            background: #b93660;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            Beauty Finds Daily
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Makeup</a>
+            <a href="#">Skincare</a>
+            <a href="#">Hair Care</a>
+            <a href="#">Beauty Tools</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <h1>
+            Discover Your Next Beauty Find ✨
+        </h1>
+
+        <p>
+            Trending beauty products, skincare favorites,
+            makeup must-haves and more.
+        </p>
+
+        <a href="#categories" class="button">
+            Explore Beauty Finds
+        </a>
+
+    </section>
+
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories" id="categories">
+
+        <h2>
+            Browse Categories
+        </h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <h3>💄 Makeup</h3>
+                <p>
+                    Discover trending makeup products.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>🧴 Skincare</h3>
+                <p>
+                    Find skincare products worth trying.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>💇‍♀️ Hair Care</h3>
+                <p>
+                    Explore hair care favorites.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>✨ Beauty Tools</h3>
+                <p>
+                    Useful tools for your beauty routine.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED BEAUTY FINDS -->
+    <section class="products">
+
+        <h2>
+            ✨ Featured Beauty Finds
+        </h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    💄
+                </div>
+
+                <h3>
+                    Everyday Makeup Essentials
+                </h3>
+
+                <p>
+                    Discover beautiful makeup products
+                    for your everyday routine.
+                </p>
+
+                <a href="#" class="shop-button">
+                    Shop Now
+                </a>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🧴
+                </div>
+
+                <h3>
+                    Skincare Favorites
+                </h3>
+
+                <p>
+                    Simple skincare products to help
+                    you build a better routine.
+                </p>
+
+                <a href="#" class="shop-button">
+                    Shop Now
+                </a>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    💇‍♀️
+                </div>
+
+                <h3>
+                    Hair Care Finds
+                </h3>
+
+                <p>
+                    Explore products and tools for
+                    beautiful, healthy-looking hair.
+                </p>
+
+                <a href="#" class="shop-button">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Beauty Finds Daily. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
